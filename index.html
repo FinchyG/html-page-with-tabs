@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tabs Example</title>
+    <link rel="stylesheet" href="tabs.css" />
+    <script src="index.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+    <!-- Tab links -->
+    <div class="tab tabButtons">
+        <button class="tablinks" id="defaultOpen" onclick="openCity(event, 'Town-level')">Town-level</button>
+        <button class="tablinks" onclick="openCity(event, 'County-level')">County-level</button>
+        <button class="tablinks" onclick="openCity(event, 'Country-level')">Country-level</button>
+    </div>
+
+    <!-- Tab content -->
+    <div id="Town-level" class="tabcontent" >
+        <h3>Town-level</h3>
+        <p>Town-level map to be shown here</p>
+    </div>
+
+    <div id="County-level" class="tabcontent">
+        <h3>County-level</h3>
+        <p>County-level map to be shown here.</p>
+    </div>
+
+    <div id="Country-level" class="tabcontent">
+        <h3>Country-level</h3>
+        <p>Country-level is the capital of Japan.</p>
+    </div>
+
+    <script>
+        // Get the element with id="defaultOpen" and click on it
+        document.getElementById("defaultOpen").click();
+    </script>
+
+</body>
+</html>
